@@ -1,69 +1,69 @@
-flow chart
 Flowchart for Inventory Management System
 1. Start
-Start: Beginning of the application.
+  Start: Beginning of the application.
 2. Main Menu
-Display Main Menu: Show options to choose between Customer, Company Admin, and Exit.
+  Display Main Menu: Show options to choose between Customer, Company Admin, and Exit.
 3. Customer Path
-Handle Customer Choice
-Input Customer ID or 'new':
-If 'new':
-Create New Customer: Input name, contact number, and address.
-Else:
-Find Customer: Search for existing customer by ID.
-Customer Found?
-Yes: Proceed to order processing.
-No: Display "Customer not found" and return to Main Menu.
-Order Processing:
-Display Order Menu:
-Add to Cart: Input product details, add to cart, and update inventory.
-Look at Cart: Display current cart items and total price.
-Clear Cart: Remove all items from cart and update inventory.
-Place Order: Add the order to the order list and return to Main Menu.
-Return: Go back to Main Menu.
+  Handle Customer Choice
+  Input Customer ID or 'new':
+  If 'new':
+    Create New Customer: Input name, contact number, and address.
+  Else:
+    Find Customer: Search for existing customer by ID.
+  Customer Found?
+  Yes: Proceed to order processing.
+  No: Display "Customer not found" and return to Main Menu.
+  Order Processing:
+  Display Order Menu:
+  Add to Cart: Input product details, add to cart, and update inventory.
+  Look at Cart: Display current cart items and total price.
+  Clear Cart: Remove all items from cart and update inventory.
+  Place Order: Add the order to the order list and return to Main Menu.
+  Return: Go back to Main Menu.
 4. Admin Path
-Handle Admin Choice
-Display Admin Menu:
-New Product: Add a new product to inventory.
-GST: Modify GST rate.
-Margin: Modify overhead multiplier.
-Product List: Display list of products.
-Modify/Remove Product: Find product by SKU, then modify or remove.
-Show Recent Orders: Display recent customer orders.
-Add Stock: Increase inventory count for a product.
-Return: Go back to Main Menu.
+  Handle Admin Choice
+  Display Admin Menu:
+  New Product: Add a new product to inventory.
+  GST: Modify GST rate.
+  Margin: Modify overhead multiplier.
+  Product List: Display list of products.
+  Modify/Remove Product: Find product by SKU, then modify or remove.
+  Show Recent Orders: Display recent customer orders.
+  Add Stock: Increase inventory count for a product.
+  Return: Go back to Main Menu.
 5. Exit
-Display Exit Message: Inform the user that the application is closing.
-End: Terminate the application.
+  Display Exit Message: Inform the user that the application is closing.
+  End: Terminate the application.
+  
 Flowchart Description
-Start: Initiate the application.
-Main Menu: Display options to the user (Customer, Company Admin, Exit).
-If Customer:
-Input Customer ID or 'new':
-If 'new':
-Create New Customer: Capture and store details.
-If Existing Customer:
-Find Customer: Search and validate customer ID.
-Order Processing:
-Add to Cart: Input product details, adjust inventory.
-Look at Cart: Display cart content and total price.
-Clear Cart: Remove items from cart, update inventory.
-Place Order: Confirm and add order.
-Return to Main Menu.
+  Start: Initiate the application.
+  Main Menu: Display options to the user (Customer, Company Admin, Exit).
+  If Customer:
+    Input Customer ID or 'new':
+      If 'new':
+        Create New Customer: Capture and store details.
+      If Existing Customer:
+        Find Customer: Search and validate customer ID.
+    Order Processing:
+      Add to Cart: Input product details, adjust inventory.
+      Look at Cart: Display cart content and total price.
+      Clear Cart: Remove items from cart, update inventory.
+      Place Order: Confirm and add order.
+  Return to Main Menu.
 If Company Admin:
-Display Admin Menu:
-New Product: Add product details to inventory.
-Modify GST: Update GST rate.
-Modify Margin: Update overhead multiplier.
-Show Product List: Display current products.
-Modify/Remove Product: Find product by SKU, modify or remove.
-Show Recent Orders: List recent orders.
-Add Stock: Increase stock for a product.
-Return to Main Menu.
+  Display Admin Menu:
+    New Product: Add product details to inventory.
+    Modify GST: Update GST rate.
+    Modify Margin: Update overhead multiplier.
+    Show Product List: Display current products.
+    Modify/Remove Product: Find product by SKU, modify or remove.
+    Show Recent Orders: List recent orders.
+    Add Stock: Increase stock for a product.
+    Return to Main Menu.
 If Exit:
-Display Exit Message.
-End: Close application.
-in menu if select 4, it will show archived inventory
+  Display Exit Message.
+  End: Close application.
+in menu if option 4 is selected, it will show archived inventory. it is a secret menu.
 
 # Inventory Management System
 
