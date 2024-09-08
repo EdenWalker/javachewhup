@@ -5,14 +5,12 @@ Flowchart for Inventory Management System
   Display Main Menu: Show options to choose between Customer, Company Admin, and Exit.
 3. Customer Path
   Handle Customer Choice
-
   Input Customer ID or 'new':
   If 'new':
     Create New Customer: Input name, contact number, and address.
   Else:
     Find Customer: Search for existing customer by ID.
- 
-Customer Found?
+ Customer Found?
   Yes: Proceed to order processing.
   No: Display "Customer not found" and return to Main Menu.
   Order Processing:
