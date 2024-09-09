@@ -10,9 +10,9 @@ public class Inventory {
         products = new ArrayList<>();
         archivedProducts = new ArrayList<>();
         // Initialize with example products including weight
-        products.add(new Product("rice flour", "rice flour", "erawan", "RFER25", 18, 100, 25));
-        products.add(new Product("corn starch", "corn starch flour", "A1", "CSA125", 20, 100, 25));
-        products.add(new Product("glutinous rice flour", "glutinous rice flour", "erawan", "GRFER25", 20, 100, 25));
+        products.add(new Product("rice flour", "rice", "erawan", "RFER25", 18, 100, 25));
+        products.add(new Product("corn starch", "corn starch", "A1", "CSA125", 20, 100, 25));
+        products.add(new Product("glutinous rice flour", "grice", "erawan", "GRFER25", 20, 100, 25));
         products.add(new Product("wheat maltose", "malt", "3 goat", "wm3g25", 17, 100, 25));
     }
 

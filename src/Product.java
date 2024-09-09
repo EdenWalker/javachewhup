@@ -30,6 +30,6 @@ public class Product {
     @Override
     public String toString() {
         return "Product[name=" + name + ", type=" + type + ", brand=" + brand + ", sku=" + sku
-                + ", basePrice=" + basePrice + ", inventoryCount=" + inventoryCount + ", weight=" + weight + "]";
+                + ", Price=" + basePrice + ", inventoryCount=" + inventoryCount + ", weight=" + weight + "]";
     }
 }

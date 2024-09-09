@@ -146,8 +146,32 @@ public class Menu {
 
     private static void lookAtCart(Order order) {
         System.out.println("Cart: ");
-        System.out.println(order);
-        System.out.println(String.format("Total Price: %.2f", order.calculateTotalPrice(inventory.getOverheadMult(), inventory.getGst())));
+        StringBuilder sb = new StringBuilder();
+        double totalPrice = 0;
+
+        for (CartItem item : order.getCartItems()) {
+            Product product = item.getProduct();
+            int quantity = item.getQuantity();
+            double basePrice = product.getBasePrice();
+            double overheadMult = inventory.getOverheadMult();
+            double gst = inventory.getGst();
+
+            double price = basePrice * overheadMult;
+            double gstAmount = price * gst;
+            double finalPrice = price + gstAmount;
+
+            sb.append(product.getName())
+                    .append(", Price: ")
+                    .append(String.format("%.2f", finalPrice))
+                    .append(", Quantity: ")
+                    .append(quantity)
+                    .append("\n");
+
+            totalPrice += finalPrice * quantity;
+        }
+
+        System.out.println(sb.toString());
+        System.out.println(String.format("Total Price: %.2f", totalPrice));
     }
 
     private static void clearCart(Order order) {
@@ -162,7 +186,7 @@ public class Menu {
 
     private static void placeOrder(Order order) {
         orders.add(order);
-        System.out.println("Order placed: " + order);
+        System.out.println("Order placed");
     }
 
     private static void handleAdmin() {
