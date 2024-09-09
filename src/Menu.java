@@ -147,7 +147,7 @@ public class Menu {
     private static void lookAtCart(Order order) {
         System.out.println("Cart: ");
         System.out.println(order);
-        System.out.println("Total Price: " + order.calculateTotalPrice(inventory.getOverheadMult(), inventory.getGst()));
+        System.out.println(String.format("Total Price: %.2f", order.calculateTotalPrice(inventory.getOverheadMult(), inventory.getGst())));
     }
 
     private static void clearCart(Order order) {
@@ -293,17 +293,17 @@ public class Menu {
     }
 
     private static void modifyProduct(String sku) {
-        System.out.print("Enter new Item Name (or type 'remain' to keep current value): ");
+        System.out.print("Enter new Item Name (or type 'r or remain' to keep current value): ");
         String name = sc.nextLine();
-        System.out.print("Enter new Type (or type 'remain' to keep current value): ");
+        System.out.print("Enter new Type (or type 'r or remain' to keep current value): ");
         String type = sc.nextLine();
-        System.out.print("Enter new Brand (or type 'remain' to keep current value): ");
+        System.out.print("Enter new Brand (or type 'r or remain' to keep current value): ");
         String brand = sc.nextLine();
-        System.out.print("Enter new Weight (or type 'remain' to keep current value): ");
+        System.out.print("Enter new Weight (or type 'r or remain' to keep current value): ");
         String weightStr = sc.nextLine();
-        System.out.print("Enter new Base Price (or type 'remain' to keep current value): ");
+        System.out.print("Enter new Base Price (or type 'r or remain' to keep current value): ");
         String basePriceStr = sc.nextLine();
-        System.out.print("Enter new Inventory Count (or type 'remain' to keep current value): ");
+        System.out.print("Enter new Inventory Count (or type 'r or remain' to keep current value): ");
         String inventoryCountStr = sc.nextLine();
 
         double weight = -1;
